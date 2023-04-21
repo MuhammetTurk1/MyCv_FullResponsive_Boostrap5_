@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    ---sidebar-with:240px;
+}
+
+
+
+body{
+    background-color:#033f47 ;
+    color: gray;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: white;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+    color: gray;
+    transition: all 0.4s ease;
+}
+a:hover{
+    color: yellow;
+}
+img{
+    width: 100%;
+}
+
+.full-height{
+    
+    min-height: 100vh;
+   
+    
+    
+}
+
+
+/* ! Navbar Start */
+
+.navbar{
+    background-color: #033f47;
+}
+.navbar .nav-link{
+    font-weight:700 ;
+    text-transform: uppercase;  /*? uppercase=>harflerin hepsini büyük yap */
+    color: white;
+    
+}
+ 
+.navbar .nav-link.active{
+
+    color: red;
+}
+
+ 
+.navbar .nav-link:hover{
+    color: yellow;
+}
+
+@media(min-width:992px) { 
+.navbar { 
+    min-height: 100vh;
+    width: var(---sidebar-with);
+
+
+    background-image:
+    linear-gradient(to bottom, rgba(142, 241, 203, 0.52),rgba(65, 121, 99, 0.52)),
+    url(images/sidebar-img.jpg);
+    background-size: cover;
+    background-position: center;
+     
+}}
+
+
+
+
+.navbar-brand img{
+    border: 8px solid yellow;
+}
+
+/* ! Navbar Finish */
+
+/*! CONTENT WRAPPER START */
+.container{
+
+    max-width: 100%
+}
+@media(min-width:992px) { 
+#content-wrapper{
+    padding-left: var(---sidebar-with);
+
+}}
+
+/* 
+@media(min-width:992px) { 
+    .cola{
+        width: 100%;
+    
+    }} */
+
+
+
+.text-brand{
+    color: yellow;
+}
+.btn{
+    color: #033f47;
+    background-color: yellow;
+    padding: 20px 40px;
+    font-weight: 700;
+}
+.btn:hover{
+    background-color: yellow; 
+}
+
+.link-custom{
+    font-weight: 700;
+    position: relative;
+}
+
+@media(max-width:530px){
+    .link-custom{
+        font-size: 13px;
+    }
+}
+
+.link-custom::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: yellow;
+    left: 0;
+    top: 110%;
+    transition: all 0.6s;
+   
+}
+.link-custom:hover::after{
+    width: 100%;
+}
+ 
+/*! CONTENT SERVİCES FINISH */
+
+.zzz{
+padding: 20px;
+background-color: yellow;
+background:2px solid white;
+border-radius: 20px;
+
+}
+.fa-regular{
+    padding: 20px;
+background-color: yellow;
+background:2px solid white;
+border-radius: 20px;
+}
+
+.services1 ,.services2,.services3 {
+    padding: 25px 15px 25px 40px;
+    background-color:#045964;
+    background: 5px solid white;
+    border-radius: 30px;
+    
+}
+
+.text-effect1{
+ transition: all 0.7s;
+
+}
+
+.text-effect1:hover{
+    box-shadow: -6px 6px 0 0  yellow;
+   
+   } 
+
+/*! WORK SECTİON  START */
+
+.workpic1{
+    
+    border-radius: 50px;
+ 
+} 
+
+/*! WORK SECTİON  FINISH */
+
+
+/*! WORK SECTİON  START */
+
+.aboutdivv{
+    background-color: #045964;
+    border-radius: 30px;
+ 
+} 
+
+/*! WORK SECTİON  FINISH */
+
+
+/*! REVİEV START */
+
+.iconyildiz{
+
+color: yellow;
+
+}
+
+
+
+/*! REVİEV FINISH */
+
+#contact .form-control{
+
+    background-color: #045964;
+    border-color: #045964;
+    color: white;
+}
+
+#contact .form-control:focus{
+border-color: yellow;
+
+}
